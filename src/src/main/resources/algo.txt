@@ -1,0 +1,9 @@
+Solution 1:
+Create an array of length 4
+Fill each slot in the array with a string of the number
+Replace each one with the corresponding string
+Put together and return
+
+Solution 2:
+Create a hasMap
+Map each number to a symbol

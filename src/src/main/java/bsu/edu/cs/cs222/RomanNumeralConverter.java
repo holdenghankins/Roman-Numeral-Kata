@@ -1,32 +1,29 @@
 package bsu.edu.cs.cs222;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class RomanNumeralConverter {
     public static String convert(int num) {
-
-        String rn = "";
-        switch (num) {
-            case 1 -> rn = "I";
-            case 3 -> rn = "III";
-            case 4 -> rn = "IV";
-            case 5 -> rn = "V";
-            case 8 -> rn = "VIII";
-            case 9 -> rn = "IX";
-            case 10 -> rn = "X";
-            case 34 -> rn = "XXXIV";
-            case 45 -> rn = "XLV";
-            case 50 -> rn = "L";
-            case 79 -> rn = "LXXIX";
-            case 99 -> rn = "XCIX";
-            case 100 -> rn = "C";
-            case 303 -> rn = "CCCIII";
-            case 495 -> rn = "CDXCV";
-            case 500 -> rn = "D";
-            case 787 -> rn = "DCCLXXXVII";
-            case 949 -> rn = "CMXLIX";
-            case 1000 -> rn = "M";
-            case 2782 -> rn = "MMDCCLXXXII";
+        if (num > 3000 || num < 0) {
+            return "";
         }
 
-        return rn;
+        StringBuilder romanNumeral = new StringBuilder();
+
+        int[] numbers = new int[]{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        String[] numerals = new String[]{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        int ptr = 0;
+
+        while (num > 0) {
+            int value = numbers[ptr];
+            if (num >= numbers[ptr]) {
+                romanNumeral.append(numerals[ptr]);
+                num -= numbers[ptr];
+            } else {
+                ptr++;
+            }
+        }
+        return romanNumeral.toString();
     }
 }
