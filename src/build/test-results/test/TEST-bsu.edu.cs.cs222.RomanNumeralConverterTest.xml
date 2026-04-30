@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bsu.edu.cs.cs222.RomanNumeralConverterTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-04-30T18:04:50.425Z" hostname="JERRY" time="0.065">
+  <properties/>
+  <testcase name="testOne()" classname="bsu.edu.cs.cs222.RomanNumeralConverterTest" time="0.031"/>
+  <testcase name="testTen()" classname="bsu.edu.cs.cs222.RomanNumeralConverterTest" time="0.001"/>
+  <testcase name="testFifty()" classname="bsu.edu.cs.cs222.RomanNumeralConverterTest" time="0.001"/>
+  <testcase name="testFive()" classname="bsu.edu.cs.cs222.RomanNumeralConverterTest" time="0.002"/>
+  <testcase name="testZero()" classname="bsu.edu.cs.cs222.RomanNumeralConverterTest" time="0.001"/>
+  <testcase name="testThousandths()" classname="bsu.edu.cs.cs222.RomanNumeralConverterTest" time="0.002"/>
+  <testcase name="testHundred()" classname="bsu.edu.cs.cs222.RomanNumeralConverterTest" time="0.002"/>
+  <testcase name="testOverThreeThousand()" classname="bsu.edu.cs.cs222.RomanNumeralConverterTest" time="0.001"/>
+  <testcase name="testFiveHundred()" classname="bsu.edu.cs.cs222.RomanNumeralConverterTest" time="0.001"/>
+  <testcase name="testNegative()" classname="bsu.edu.cs.cs222.RomanNumeralConverterTest" time="0.002"/>
+  <testcase name="testBitLimit()" classname="bsu.edu.cs.cs222.RomanNumeralConverterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
