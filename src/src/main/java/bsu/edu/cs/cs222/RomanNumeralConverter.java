@@ -1,8 +1,4 @@
 package bsu.edu.cs.cs222;
-
-import java.util.HashMap;
-import java.util.Map;
-
 public class RomanNumeralConverter {
     public static String convert(int num) {
         if (num > 3000 || num < 0) {
@@ -16,7 +12,6 @@ public class RomanNumeralConverter {
         int ptr = 0;
 
         while (num > 0) {
-            int value = numbers[ptr];
             if (num >= numbers[ptr]) {
                 romanNumeral.append(numerals[ptr]);
                 num -= numbers[ptr];
